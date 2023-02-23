@@ -81,32 +81,32 @@ int main(void)
 	//0=dot,1=dash,read right-to-left
 	const unsigned long a_table[36] =
 	{
-		0xFFFFFF10, //A
-		0xFFFF0001, //B
-		0xFFFF0101, //C
-		0xFFFFF001, //D
-		0xFFFFFFF0, //E
-		0xFFFF0100, //F
-		0xFFFFF011, //G
-		0xFFFF0000, //H
-		0xFFFFFF00, //I
-		0xFFFF1110, //J
-		0xFFFFF101, //K
-		0xFFFF0010, //L
-		0xFFFFFF11, //M
-		0xFFFFFF01, //N
-		0xFFFFF111, //O
-		0xFFFF0110, //P
-		0xFFFF1011, //Q
-		0xFFFFF010, //R
-		0xFFFFF000, //S
-		0xFFFFFFF1, //T
-		0xFFFFF100, //U
-		0xFFFF1000, //V
-		0xFFFFF110, //W
-		0xFFFF1001, //X
-		0xFFFF1101, //Y
-		0xFFFF0011  //Z
+		0xF10, //A
+		0xF0001, //B
+		0xF0101, //C
+		0xF001, //D
+		0xF0, //E
+		0xF0100, //F
+		0xF011, //G
+		0xF0000, //H
+		0xFF00, //I
+		0xF1110, //J
+		0xF101, //K
+		0xF0010, //L
+		0xF11, //M
+		0xF01, //N
+		0xF111, //O
+		0xF0110, //P
+		0xF1011, //Q
+		0xF010, //R
+		0xF000, //S
+		0xF1, //T
+		0xF100, //U
+		0xF1000, //V
+		0xF110, //W
+		0xF1001, //X
+		0xF1101, //Y
+		0xF0011  //Z
 	};
 
 	//NOTE: ONLY UPPERCASE ONLY MESSAGES
