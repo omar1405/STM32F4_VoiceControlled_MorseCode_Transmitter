@@ -10,7 +10,7 @@ The Current version (v1.0):
 
 The table below shows the used Morse Code (left-to-right) and their Binarized Form (right-to-left):
 
-| Character | Morse Code\n(left to right) | Binarized\n(right to left) |
+| Character | Morse Code (left to right) | Binarized (right to left) |
 | --- | --- | --- |
 | A | . - | 0x10 |
 | B | - . . . | 0x0001 |
