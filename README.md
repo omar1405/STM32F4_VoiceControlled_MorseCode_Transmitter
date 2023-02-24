@@ -9,8 +9,8 @@ v1.0:
 - Only capable of alphabets (A~Z).
 - Operation is terminated whenever '\0' is read, after which another LED (red) is turned on for 10seconds to indicate the end of the message transmission.
 
-The table below shows the used Morse Code and their Binarized Form (Message is transmitted from right to left):
-| Character | Morse Code | Binarized |
+The table below shows the used Morse Code and their Hex Form (Message is transmitted from right to left):
+| Character | Morse Code | Hex |
 | --- | --- | --- |
 | A | - . | 0x10 |
 | B | . . . - | 0x0001 |
