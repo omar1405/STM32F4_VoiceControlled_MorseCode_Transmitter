@@ -1,12 +1,13 @@
 # STM32F4_MorseCode_Transmitter
 
-This is a project that transmits a user string into Morse code, as the output of an LED. A Morse Code is defined as a combination of dots ( . ), represented as OFF LED, and dashes ( - ), represented as ON LED. 
+This is a project that transmits a user string into Morse code, as the output of a (green) LED. A Morse Code is defined as a combination of dots ( . ), represented as OFF LED, and dashes ( - ), represented as ON LED. 
 
 *Used Board: STM32F407VG Discovery Board.
 
-The Current version (v1.0):
+v1.0:
 - Reads a string pre-defined by the user.
 - Only capable of alphabets (A~Z).
+- Operation is terminated whenever '\0' is read, after which another LED (red) is turned on for 10seconds to indicate the end of the message transmission.
 
 The table below shows the used Morse Code and their Binarized Form (Message is transmitted from right to left):
 | Character | Morse Code | Binarized |
@@ -37,3 +38,6 @@ The table below shows the used Morse Code and their Binarized Form (Message is t
 | X | - . . - | 0x1001 |
 | Y | - - . - | 0x1101 |
 | Z | . . - - | 0x0011 |
+
+The Youtube video below shows a working example of the message "OMAR".
+[![Youtube Video Link](http://embedded-lab.com/blog/integrating-stm32f4xx-standard-peripheral-library-mikroc-pro-arm/stm32f4-discovery-board/)](https://youtu.be/aDiDqabtmXc)
