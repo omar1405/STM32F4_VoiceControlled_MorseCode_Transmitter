@@ -40,4 +40,5 @@ The table below shows the used Morse Code and their Binarized Form (Message is t
 | Z | . . - - | 0x0011 |
 
 The Youtube video below shows a working example of the message "OMAR".
-[![Youtube Video Link](http://embedded-lab.com/blog/integrating-stm32f4xx-standard-peripheral-library-mikroc-pro-arm/stm32f4-discovery-board/)](https://youtu.be/aDiDqabtmXc)
+
+[![Youtube Video Link]()](https://youtu.be/aDiDqabtmXc)
