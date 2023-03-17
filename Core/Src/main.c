@@ -81,32 +81,32 @@ int main(void)
 	//0=dot,1=dash,read right-to-left
 	const unsigned long a_table[36] =
 	{
-		0xF10, //A
-		0xF0001, //B
-		0xF0101, //C
-		0xF001, //D
-		0xF0, //E
-		0xF0100, //F
-		0xF011, //G
-		0xF0000, //H
-		0xFF00, //I
-		0xF1110, //J
-		0xF101, //K
-		0xF0010, //L
-		0xF11, //M
-		0xF01, //N
-		0xF111, //O
-		0xF0110, //P
-		0xF1011, //Q
-		0xF010, //R
-		0xF000, //S
-		0xF1, //T
-		0xF100, //U
-		0xF1000, //V
-		0xF110, //W
-		0xF1001, //X
-		0xF1101, //Y
-		0xF0011  //Z
+		0b110100,		//A
+		0b1100000001,	//B
+		0b1100010001,	//C
+		0b11000001,		//D
+		0b1100,		//E
+		0b1100010000,	//F
+		0b11000101,		//G
+		0b1100000000,	//H
+		0b110000,		//I
+		0b1101010100,	//J
+		0b11010001,		//K
+		0b1100000100,	//L
+		0b110101,		//M
+		0b110001,		//N
+		0b11010101,		//O
+		0b1100010100,	//P
+		0b1101000101,	//Q
+		0b11000100,		//R
+		0b11000000,		//S
+		0b1101,			//T
+		0b11010000,		//U
+		0b1101000000,	//V
+		0b11010100,		//W
+		0b1101000001,	//X
+		0b1101010001,	//Y
+		0b1100000101,	//Z
 	};
 
 	//NOTE: ONLY UPPERCASE ONLY MESSAGES
@@ -175,16 +175,16 @@ int main(void)
 				//0 = dot
 				//1 = dash
 				//F = exit condition
-				int hex_digit = (a_table[temp] & ( 0xf << 4*k )) >> 4*k;
+				int hex_digit = (a_table[temp] & ( 0b11 << 2*k )) >> 2*k;
 				if (hex_digit == 0xf){
 					out_spacing(morse_time_unit,letter_spacing_time_scale);
 					break;
-				}else if (hex_digit == 0x1){
+				}else if (hex_digit == 0b01){
 					//dash flash
 					out_dash(morse_time_unit);
 					//letter spacing
 					out_spacing(morse_time_unit,1);
-				}else if (hex_digit == 0x0){
+				}else if (hex_digit == 0b00){
 					//dot flash
 					out_dot (morse_time_unit);
 					//letter spacing
