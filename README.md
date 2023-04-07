@@ -2,6 +2,8 @@
 
 This is a project that transmits a user string into Morse code, as the output of a (green) LED. A Morse Code is defined as a combination of dots ( . ), represented as OFF LED, and dashes ( - ), represented as ON LED. 
 
+Note: it is planned to add Voice-Control to this design (in progress).
+
 *Used Board: STM32F407VG Discovery Board.
 
 v1.0:
